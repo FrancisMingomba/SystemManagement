@@ -1,0 +1,12 @@
+C:\Users\mingo\source\repos\SystemManagement\LoginSystem\obj\Debug\net5.0\LoginSystem.csproj.AssemblyReference.cache
+C:\Users\mingo\source\repos\SystemManagement\LoginSystem\obj\Debug\net5.0\LoginSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mingo\source\repos\SystemManagement\LoginSystem\obj\Debug\net5.0\LoginSystem.AssemblyInfoInputs.cache
+C:\Users\mingo\source\repos\SystemManagement\LoginSystem\obj\Debug\net5.0\LoginSystem.AssemblyInfo.cs
+C:\Users\mingo\source\repos\SystemManagement\LoginSystem\obj\Debug\net5.0\LoginSystem.csproj.CoreCompileInputs.cache
+C:\Users\mingo\source\repos\SystemManagement\LoginSystem\bin\Debug\net5.0\LoginSystem.deps.json
+C:\Users\mingo\source\repos\SystemManagement\LoginSystem\bin\Debug\net5.0\LoginSystem.dll
+C:\Users\mingo\source\repos\SystemManagement\LoginSystem\bin\Debug\net5.0\ref\LoginSystem.dll
+C:\Users\mingo\source\repos\SystemManagement\LoginSystem\bin\Debug\net5.0\LoginSystem.pdb
+C:\Users\mingo\source\repos\SystemManagement\LoginSystem\obj\Debug\net5.0\LoginSystem.dll
+C:\Users\mingo\source\repos\SystemManagement\LoginSystem\obj\Debug\net5.0\ref\LoginSystem.dll
+C:\Users\mingo\source\repos\SystemManagement\LoginSystem\obj\Debug\net5.0\LoginSystem.pdb

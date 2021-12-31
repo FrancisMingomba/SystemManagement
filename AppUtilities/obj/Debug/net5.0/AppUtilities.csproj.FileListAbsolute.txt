@@ -1,0 +1,15 @@
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\bin\Debug\net5.0\AppUtilities.deps.json
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\bin\Debug\net5.0\AppUtilities.dll
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\bin\Debug\net5.0\ref\AppUtilities.dll
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\bin\Debug\net5.0\AppUtilities.pdb
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\bin\Debug\net5.0\DataObjects.dll
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\bin\Debug\net5.0\DataObjects.pdb
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.csproj.AssemblyReference.cache
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.AssemblyInfoInputs.cache
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.AssemblyInfo.cs
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.csproj.CoreCompileInputs.cache
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.csproj.CopyComplete
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.dll
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\obj\Debug\net5.0\ref\AppUtilities.dll
+C:\Users\mingo\source\repos\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.pdb

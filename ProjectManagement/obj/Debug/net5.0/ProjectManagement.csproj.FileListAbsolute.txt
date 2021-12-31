@@ -1,0 +1,16 @@
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\bin\Debug\net5.0\ProjectManagement.exe
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\bin\Debug\net5.0\ProjectManagement.deps.json
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\bin\Debug\net5.0\ProjectManagement.runtimeconfig.json
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\bin\Debug\net5.0\ProjectManagement.runtimeconfig.dev.json
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\bin\Debug\net5.0\ProjectManagement.dll
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\bin\Debug\net5.0\ref\ProjectManagement.dll
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\bin\Debug\net5.0\ProjectManagement.pdb
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\obj\Debug\net5.0\ProjectManagement.csproj.AssemblyReference.cache
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\obj\Debug\net5.0\ProjectManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\obj\Debug\net5.0\ProjectManagement.AssemblyInfoInputs.cache
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\obj\Debug\net5.0\ProjectManagement.AssemblyInfo.cs
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\obj\Debug\net5.0\ProjectManagement.csproj.CoreCompileInputs.cache
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\obj\Debug\net5.0\ProjectManagement.dll
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\obj\Debug\net5.0\ref\ProjectManagement.dll
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\obj\Debug\net5.0\ProjectManagement.pdb
+C:\Users\mingo\source\repos\SystemManagement\ProjectManagement\obj\Debug\net5.0\ProjectManagement.genruntimeconfig.cache

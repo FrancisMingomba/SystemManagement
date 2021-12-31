@@ -1,0 +1,60 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SystemManagement/1.0.0": {
+        "dependencies": {
+          "AppUtilities": "1.0.0",
+          "LoginSystem": "1.0.0"
+        },
+        "runtime": {
+          "SystemManagement.dll": {}
+        }
+      },
+      "AppUtilities/1.0.0": {
+        "dependencies": {
+          "DataObjects": "1.0.0"
+        },
+        "runtime": {
+          "AppUtilities.dll": {}
+        }
+      },
+      "DataObjects/1.0.0": {
+        "runtime": {
+          "DataObjects.dll": {}
+        }
+      },
+      "LoginSystem/1.0.0": {
+        "runtime": {
+          "LoginSystem.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SystemManagement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AppUtilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataObjects/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LoginSystem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
