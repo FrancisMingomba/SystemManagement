@@ -12,26 +12,27 @@ namespace AppUtilities
     {
         public void CreateUser(Person persons)
         {
+            string username = persons.Username;
+            string firstname = persons.FirstName;
+            string lastname = persons.LastName;
+            string profession = persons.Profession;
+            string role = persons.Role;
             
 
             string tempPassword = tempPasswordCreator();
             string filepath = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
             // string filepath = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\TextFile1.txt";
             //----------------------------------------------------------
-            try
-            {               
-                using (StreamWriter outputFile = new StreamWriter(filepath, append: true))
-                {
+            string[] contents = { username + firstname + lastname + profession + role };
 
-                    outputFile.WriteLine(persons.Username + "," + persons.Firstname + "," + persons.Lastname + "," + persons.Profession + "," + tempPassword);
-                }
-
-                //return filepath;
-            }
-            catch (Exception e)
+           
+            string data = string.Join(", ", contents);
+            //string content = s  + person.FirstName + person.LastName  + person.Profession  + tempPassword.ToString();
+            using (StreamWriter outputFile = new StreamWriter(filepath, append: true))
             {
-                throw;
+                outputFile.WriteLine(username + "," + firstname + "," + lastname + "," + profession + "," + tempPassword + " , " + role);
             }
+
 
         }
 
@@ -47,7 +48,7 @@ namespace AppUtilities
 
         public string FileData()
         {
-            var path = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
+             var path = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
 
             var enumLines = File.ReadLines(path, Encoding.UTF8);
 
@@ -55,6 +56,29 @@ namespace AppUtilities
             {
                 Console.WriteLine(line);
             }
+            return path;
+        }
+        public string  UserAccess() 
+        {
+            var path = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
+            using var rd = new StreamReader(path);
+            List<string> x = new List<string>();
+
+            while (!rd.EndOfStream)
+            {
+                var split = rd.ReadLine().Split(',');
+
+                var storedRole = split[4];
+                x.Add(storedRole);
+
+                //----------------------------------------
+                //var  last = split[split.Length - 1];
+               
+                //---------------------------------------
+                Console.WriteLine(storedRole);
+               
+            }
+
             return path;
         }
     }

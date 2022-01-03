@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mingo\\source\\repos\\SystemManagement\\LoginSystem\\LoginSystem.csproj": {}
+    "C:\\Users\\mingo\\Desktop\\SystemManagement\\LoginSystem\\LoginSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mingo\\source\\repos\\SystemManagement\\LoginSystem\\LoginSystem.csproj": {
+    "C:\\Users\\mingo\\Desktop\\SystemManagement\\LoginSystem\\LoginSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mingo\\source\\repos\\SystemManagement\\LoginSystem\\LoginSystem.csproj",
+        "projectUniqueName": "C:\\Users\\mingo\\Desktop\\SystemManagement\\LoginSystem\\LoginSystem.csproj",
         "projectName": "LoginSystem",
-        "projectPath": "C:\\Users\\mingo\\source\\repos\\SystemManagement\\LoginSystem\\LoginSystem.csproj",
+        "projectPath": "C:\\Users\\mingo\\Desktop\\SystemManagement\\LoginSystem\\LoginSystem.csproj",
         "packagesPath": "C:\\Users\\mingo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mingo\\source\\repos\\SystemManagement\\LoginSystem\\obj\\",
+        "outputPath": "C:\\Users\\mingo\\Desktop\\SystemManagement\\LoginSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

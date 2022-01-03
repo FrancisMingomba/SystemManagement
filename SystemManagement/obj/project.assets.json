@@ -67,11 +67,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mingo\\source\\repos\\SystemManagement\\SystemManagement\\SystemManagement.csproj",
+      "projectUniqueName": "C:\\Users\\mingo\\Desktop\\SystemManagement\\SystemManagement\\SystemManagement.csproj",
       "projectName": "SystemManagement",
-      "projectPath": "C:\\Users\\mingo\\source\\repos\\SystemManagement\\SystemManagement\\SystemManagement.csproj",
+      "projectPath": "C:\\Users\\mingo\\Desktop\\SystemManagement\\SystemManagement\\SystemManagement.csproj",
       "packagesPath": "C:\\Users\\mingo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mingo\\source\\repos\\SystemManagement\\SystemManagement\\obj\\",
+      "outputPath": "C:\\Users\\mingo\\Desktop\\SystemManagement\\SystemManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -92,11 +92,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\mingo\\source\\repos\\SystemManagement\\AppUtilities\\AppUtilities.csproj": {
-              "projectPath": "C:\\Users\\mingo\\source\\repos\\SystemManagement\\AppUtilities\\AppUtilities.csproj"
+            "C:\\Users\\mingo\\Desktop\\SystemManagement\\AppUtilities\\AppUtilities.csproj": {
+              "projectPath": "C:\\Users\\mingo\\Desktop\\SystemManagement\\AppUtilities\\AppUtilities.csproj"
             },
-            "C:\\Users\\mingo\\source\\repos\\SystemManagement\\LoginSystem\\LoginSystem.csproj": {
-              "projectPath": "C:\\Users\\mingo\\source\\repos\\SystemManagement\\LoginSystem\\LoginSystem.csproj"
+            "C:\\Users\\mingo\\Desktop\\SystemManagement\\LoginSystem\\LoginSystem.csproj": {
+              "projectPath": "C:\\Users\\mingo\\Desktop\\SystemManagement\\LoginSystem\\LoginSystem.csproj"
             }
           }
         }

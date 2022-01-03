@@ -17,7 +17,7 @@ namespace DataObjects
         /// <param name="firstName"></param>
         /// <param name="lastName"></param>
         /// <param name="userName"></param>
-        public Person(string userName, string firstName, string lastName, string profession)
+        public Person(string userName, string firstName, string lastName, string profession, string role)
         {
             // this qualifier is not necessarily needed. It's just added
             // for personal clarity on what property is being set.
@@ -25,6 +25,7 @@ namespace DataObjects
             this.FirstName = firstName;
             this.LastName = lastName;
             this.Profession = profession;
+            this.Role = role;
         }
 
 
@@ -38,6 +39,7 @@ namespace DataObjects
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Profession { get; set; }
+        public string Role { get; set; }
 
 
 
@@ -62,13 +64,6 @@ namespace DataObjects
             this.Password = password;
         }
 
-        public Person(object username, string v1, string v2)
-        {
-        }
-
-        public Person(string userName, string firstName, string lastName, string profession, string v) : this(userName, firstName, lastName, profession)
-        {
-        }
 
         public override string ToString()
         {
@@ -76,8 +71,8 @@ namespace DataObjects
             //return  Name + ",  " + Score.ToString();
             //return Name + " " +Score.ToString(); This one
             //return Name + " " + Score + Username + Password.ToString();
-            return Name + " " + Score.ToString();
-
+            //return Name + " " + Score.ToString();
+            return Username + FirstName + LastName + Profession + Role.ToString();
         }
 
     }

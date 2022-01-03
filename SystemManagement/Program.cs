@@ -10,7 +10,9 @@ namespace SystemManagement
         public static void Main(string[] args)
         {
 
-            //string fileName = @"\Users\mingo\source\repos\Program2.version2\Program2.version2\PersonData.txt";
+            IUtilities utilities = new Utilities();
+            var userRole = utilities.UserAccess();
+            Console.WriteLine("The user role is: " + userRole);
 
             //----------------------------------------------
             //string filePath = @"C:\Users\mingo\source\repos\Program2.version2\Program2.version2\TextFile2.csv";
@@ -69,9 +71,6 @@ namespace SystemManagement
             Console.Write("Enter your password: ");
             String password = Console.ReadLine();
 
-            //----------------------------------------------------
-            // if(username == username)
-            //----------------------------------------------------
 
 
             ILoginManager loginManager = new LoginManager();
@@ -84,34 +83,14 @@ namespace SystemManagement
 
             if (success)
             {
-                Console.WriteLine("Login Successful");
+                //Console.WriteLine("Login Successful");
 
                 Role.AppRole role = RoleManager.getRoles(username);
 
                 if (role == Role.AppRole.Admin)
                     Console.WriteLine(username + " is an Administrator");
-                if (role == Role.AppRole.User)
-                    Console.WriteLine(username + " is a User");
 
-            }
-            else
-            {
-                Console.WriteLine("Log in failed....");
-
-            }
-
-            // putting this here temporarily to not 
-            // execute the rest of the code
-            return;
-
-
-
-
-
-            if (success)
-            {
-                Console.WriteLine("user: " + success);
-
+                //---------------------------------------------------------
                 Console.WriteLine("Main menu");
                 Console.WriteLine("Choose a option");
                 Console.WriteLine("1: Create a user");
@@ -124,7 +103,7 @@ namespace SystemManagement
                 //{
                 //    case "1":
                 //----------------------------------
-                IUtilities utilities = new Utilities();
+              
                 //var firstItems = Data.Select(lst => lst[0]);
                 //------------------------------------
                 Console.WriteLine("----------Admin Longin------------");
@@ -142,13 +121,72 @@ namespace SystemManagement
                 Console.WriteLine("Enter profession:");
                 string _profession = Console.ReadLine();
 
+                Console.WriteLine("Enter last name:");
+                string _role = Console.ReadLine();
+
+                Person personToCreate = new Person(_userName, _firstName, _lastName, _profession, _role);
+                //---------------------------------------------------------
+                //if (role == Role.AppRole.User)
+                //    Console.WriteLine(username + " is a User");
+
+
+            }
+
+            Role.AppRole role1 = RoleManager.getRoles(username);
+            if (role1 == Role.AppRole.User) { 
+                Console.WriteLine(username + " is a User");
+
+        }
+
+            // putting this here temporarily to not 
+            // execute the rest of the code
+            return;
+
+
+
+
+
+            if (success)
+            {
+                //Console.WriteLine("user: " + success);
+
+                //Console.WriteLine("Main menu");
+                //Console.WriteLine("Choose a option");
+                //Console.WriteLine("1: Create a user");
+                //Console.WriteLine("2: Next");
+
+                //Console.Write("Choose an option: ");
+                //string option = Console.ReadLine();
+
+                ////switch (option)
+                ////{
+                ////    case "1":
+                ////----------------------------------
+                //IUtilities utilities = new Utilities();
+                ////var firstItems = Data.Select(lst => lst[0]);
+                ////------------------------------------
+                //Console.WriteLine("----------Admin Longin------------");
+                //Console.WriteLine("        Create user");
+
+                //Console.WriteLine("Enter username:");
+                //string _userName = Console.ReadLine();
+
+                //Console.WriteLine("Enter First name:");
+                //string _firstName = Console.ReadLine();
+
+                //Console.WriteLine("Enter last name:");
+                //string _lastName = Console.ReadLine();
+
+                //Console.WriteLine("Enter profession:");
+                //string _profession = Console.ReadLine();
+
                 //-------------------------------------
                 //string userName = "My user name";
                 //string firstName = "Stony"; // firstName = Console.ReadLine();
                 // string lastName = "Uriel"; // lastName = Console.Readline();
                 //string profession = "Kid"; // lastName = Console.Readline();
                 //string username = "jdoe"; //this is already defined above
-                Person personToCreate = new Person(_userName, _firstName, _lastName, _profession);
+                //Person personToCreate = new Person(_userName, _firstName, _lastName, _profession);
                 //utilities.CreateUser(personToCreate);
                 // utilities.passwordGenerator(personToCreate);
                 //////////////////// string m =  utilities.tempPasswordCreator();
