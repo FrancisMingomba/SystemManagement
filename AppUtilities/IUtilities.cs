@@ -12,7 +12,7 @@ namespace AppUtilities
 
         public void CreateUser(Person person);
         public string FileData();
-        public string UserAccess();
+        public string GetRole(string username);
        
     }
 }

@@ -58,29 +58,57 @@ namespace AppUtilities
             }
             return path;
         }
-        public string  UserAccess() 
+
+        public string GetRole(string username)
         {
-            var path = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
+            var path = @"C:\Users\mingo\Desktop\SystemManagement_Last_update\AppUtilities\TextFile1.txt";
+            //var path = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
             using var rd = new StreamReader(path);
-            List<string> x = new List<string>();
+            string role = "Unknown";
 
             while (!rd.EndOfStream)
             {
-                var split = rd.ReadLine().Split(',');
 
-                var storedRole = split[4];
-                x.Add(storedRole);
+               var split = rd.ReadLine().Split(',');
+              //var  split = rd[split.Length - 1];
 
-                //----------------------------------------
-                //var  last = split[split.Length - 1];
-               
-                //---------------------------------------
-                Console.WriteLine(storedRole);
-               
+                string usernameInFile = split[0];
+                if (username == usernameInFile)
+                {
+                   
+                    
+                  
+                    role = split[4];
+                    break;
+                }
+
             }
 
-            return path;
+            return role;
         }
+        //public string  UserAccess() 
+        //{
+        //    var path = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
+        //    using var rd = new StreamReader(path);
+        //    List<string> x = new List<string>();
+
+        //    while (!rd.EndOfStream)
+        //    {
+        //        var split = rd.ReadLine().Split(',');
+
+        //        var storedRole = split[4];
+        //        x.Add(storedRole);
+
+        //        //----------------------------------------
+        //        //var  last = split[split.Length - 1];
+
+        //        //---------------------------------------
+        //        Console.WriteLine(storedRole);
+
+        //    }
+
+        //    return path;
+        //}
     }
 }
 
