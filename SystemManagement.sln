@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataObjects", "DataObjects\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppUtilities", "AppUtilities\AppUtilities.csproj", "{A753241C-F8D5-4014-9033-A63198E2E238}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginSystem", "LoginSystem\LoginSystem.csproj", "{B1E03DA3-26F6-4E46-98BF-41E8AFBBCD81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginSystem", "LoginSystem\LoginSystem.csproj", "{B1E03DA3-26F6-4E46-98BF-41E8AFBBCD81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStatistics", "AppStatistics\AppStatistics.csproj", "{5F97CDCD-FF92-4F48-8902-A637EB5D706F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B1E03DA3-26F6-4E46-98BF-41E8AFBBCD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1E03DA3-26F6-4E46-98BF-41E8AFBBCD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1E03DA3-26F6-4E46-98BF-41E8AFBBCD81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F97CDCD-FF92-4F48-8902-A637EB5D706F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F97CDCD-FF92-4F48-8902-A637EB5D706F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F97CDCD-FF92-4F48-8902-A637EB5D706F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F97CDCD-FF92-4F48-8902-A637EB5D706F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

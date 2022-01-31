@@ -61,7 +61,8 @@ namespace AppUtilities
 
         public string GetRole(string username)
         {
-            var path = @"C:\Users\mingo\Desktop\SystemManagement_Last_update\AppUtilities\TextFile1.txt";
+            var path = System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\..\AppUtilities\" + "TextFile1.txt";
+            //var path = @"C:\Users\mingo\Desktop\SystemManagement_Last_update\AppUtilities\TextFile1.txt";
             //var path = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
             using var rd = new StreamReader(path);
             string role = "Unknown";
@@ -78,7 +79,7 @@ namespace AppUtilities
                    
                     
                   
-                    role = split[4];
+                    role = split[5];
                     break;
                 }
 

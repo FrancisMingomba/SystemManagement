@@ -9,9 +9,7 @@ namespace SystemManagement
     {
         public static void Main(string[] args)
         {
-
             IUtilities utilities = new Utilities();
-
 
             Console.WriteLine("");
             Console.WriteLine("----------Login-------------");
@@ -22,26 +20,15 @@ namespace SystemManagement
             Console.Write("Enter your password: ");
             String password = Console.ReadLine();
 
-
-
             ILoginManager loginManager = new LoginManager();
-            //ILoginManager UserloginManager = new LoginManager();
-            // bool userSuccess = UserloginManager.userAuthenticate(username, password);
             bool success = loginManager.userAuthenticate(username, password);
-            //bool success = loginManager.authenticate(username, password);
+            string userRole = utilities.GetRole(username);
+            string x = "user";
+            string z = "admin";
 
-           
-
-            if (success)
+            if (success && userRole == z)
             {
 
-                string userRole = utilities.GetRole(username);
-                Console.WriteLine(userRole);
-                string x = "user";
-                string z = "admin";
-
-                if (userRole == z)
-                {
                     Console.WriteLine("Main menu");
                     Console.WriteLine("Choose a option");
                     Console.WriteLine("1: Create a user");
@@ -69,19 +56,11 @@ namespace SystemManagement
                     string _role = Console.ReadLine();
 
                     Person personToCreate = new Person(_userName, _firstName, _lastName, _profession, _role);
-                }
-                 if (userRole == x)
+            }
+            else if (success && userRole == x)             
                 {
                     Console.WriteLine("This is user");
-
-                    //Role.AppRole role1 = RoleManager.getRoles(username);
-                }
-                //else
-                //{
-                //    Console.WriteLine("Unknown user");
-                //}
-
-            }
+                }              
             else 
             {
                 Console.WriteLine("Log in not successful");
