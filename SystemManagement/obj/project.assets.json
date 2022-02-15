@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "AppStatistics/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DataObjects": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AppStatistics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AppStatistics.dll": {}
+        }
+      },
       "AppUtilities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -38,6 +51,11 @@
     }
   },
   "libraries": {
+    "AppStatistics/1.0.0": {
+      "type": "project",
+      "path": "../AppStatistics/AppStatistics.csproj",
+      "msbuildProject": "../AppStatistics/AppStatistics.csproj"
+    },
     "AppUtilities/1.0.0": {
       "type": "project",
       "path": "../AppUtilities/AppUtilities.csproj",
@@ -56,6 +74,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AppStatistics >= 1.0.0",
       "AppUtilities >= 1.0.0",
       "LoginSystem >= 1.0.0"
     ]
@@ -92,6 +111,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\mingo\\Desktop\\SystemManagement\\AppStatistics\\AppStatistics.csproj": {
+              "projectPath": "C:\\Users\\mingo\\Desktop\\SystemManagement\\AppStatistics\\AppStatistics.csproj"
+            },
             "C:\\Users\\mingo\\Desktop\\SystemManagement\\AppUtilities\\AppUtilities.csproj": {
               "projectPath": "C:\\Users\\mingo\\Desktop\\SystemManagement\\AppUtilities\\AppUtilities.csproj"
             },

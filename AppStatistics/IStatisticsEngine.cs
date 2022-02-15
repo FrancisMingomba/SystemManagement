@@ -9,6 +9,12 @@ namespace AppStatistics
 {
     public interface IStatisticsEngine
     {
-       public double GetAvg(List<Person> person);
+       //public double GetAvg(List<Person> person);
+        public double GetAvg();
+        public double GetAvg(List<Person> persons);
+        double GetMax(List<Person> person);
+        double GetMinimum(List<Person> person);
+        double GetMode(List<Person> persons);
+
     }
 }

@@ -28,3 +28,8 @@ C:\Users\mingo\Desktop\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtiliti
 C:\Users\mingo\Desktop\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.dll
 C:\Users\mingo\Desktop\SystemManagement\AppUtilities\obj\Debug\net5.0\ref\AppUtilities.dll
 C:\Users\mingo\Desktop\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.pdb
+C:\Users\mingo\Desktop\SystemManagement\AppUtilities\bin\Debug\net5.0\fr\AppUtilities.resources.dll
+C:\Users\mingo\Desktop\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.Resource.resources
+C:\Users\mingo\Desktop\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.Resource.fr.resources
+C:\Users\mingo\Desktop\SystemManagement\AppUtilities\obj\Debug\net5.0\AppUtilities.csproj.GenerateResource.cache
+C:\Users\mingo\Desktop\SystemManagement\AppUtilities\obj\Debug\net5.0\fr\AppUtilities.resources.dll

@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AppStatistics\AppStatistics.csproj" />
     <ProjectReference Include="..\AppUtilities\AppUtilities.csproj" />
     <ProjectReference Include="..\LoginSystem\LoginSystem.csproj" />
   </ItemGroup>

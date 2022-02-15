@@ -44,3 +44,6 @@ C:\Users\mingo\Desktop\SystemManagement\SystemManagement\obj\Debug\net5.0\System
 C:\Users\mingo\Desktop\SystemManagement\SystemManagement\obj\Debug\net5.0\ref\SystemManagement.dll
 C:\Users\mingo\Desktop\SystemManagement\SystemManagement\obj\Debug\net5.0\SystemManagement.pdb
 C:\Users\mingo\Desktop\SystemManagement\SystemManagement\obj\Debug\net5.0\SystemManagement.genruntimeconfig.cache
+C:\Users\mingo\Desktop\SystemManagement\SystemManagement\bin\Debug\net5.0\AppStatistics.dll
+C:\Users\mingo\Desktop\SystemManagement\SystemManagement\bin\Debug\net5.0\AppStatistics.pdb
+C:\Users\mingo\Desktop\SystemManagement\SystemManagement\bin\Debug\net5.0\fr\AppUtilities.resources.dll

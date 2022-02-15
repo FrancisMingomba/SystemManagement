@@ -1,0 +1,15 @@
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\bin\Debug\net5.0\AppStatistics.deps.json
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\bin\Debug\net5.0\AppStatistics.dll
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\bin\Debug\net5.0\ref\AppStatistics.dll
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\bin\Debug\net5.0\AppStatistics.pdb
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\bin\Debug\net5.0\DataObjects.dll
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\bin\Debug\net5.0\DataObjects.pdb
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\obj\Debug\net5.0\AppStatistics.csproj.AssemblyReference.cache
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\obj\Debug\net5.0\AppStatistics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\obj\Debug\net5.0\AppStatistics.AssemblyInfoInputs.cache
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\obj\Debug\net5.0\AppStatistics.AssemblyInfo.cs
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\obj\Debug\net5.0\AppStatistics.csproj.CoreCompileInputs.cache
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\obj\Debug\net5.0\AppStatistics.csproj.CopyComplete
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\obj\Debug\net5.0\AppStatistics.dll
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\obj\Debug\net5.0\ref\AppStatistics.dll
+C:\Users\mingo\Desktop\SystemManagement\AppStatistics\obj\Debug\net5.0\AppStatistics.pdb

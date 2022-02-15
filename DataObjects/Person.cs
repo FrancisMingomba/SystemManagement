@@ -27,25 +27,14 @@ namespace DataObjects
             this.Profession = profession;
             this.Role = role;
         }
-
-
-
         public string Name { get; set; }
-
-        public double Score { get; set; }
-        //------------------------------------
+        public double Score { get; set; }    
         public string Username { get; set; }
         public string Password { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Profession { get; set; }
         public string Role { get; set; }
-
-
-
-
-
-        //------------------------------------
 
         public Person(string name, double score)
         {
@@ -63,8 +52,6 @@ namespace DataObjects
             this.Username = username;
             this.Password = password;
         }
-
-
         public override string ToString()
         {
             //return "From Object Person: " + Name + ", Score: " + Score.ToString();

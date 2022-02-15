@@ -21,23 +21,14 @@ namespace AppUtilities
 
             string tempPassword = tempPasswordCreator();
             string filepath = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
-            // string filepath = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\TextFile1.txt";
-            //----------------------------------------------------------
-            string[] contents = { username + firstname + lastname + profession + role };
-
-           
+            string[] contents = { username + firstname + lastname + profession + role };           
             string data = string.Join(", ", contents);
-            //string content = s  + person.FirstName + person.LastName  + person.Profession  + tempPassword.ToString();
+
             using (StreamWriter outputFile = new StreamWriter(filepath, append: true))
             {
                 outputFile.WriteLine(username + "," + firstname + "," + lastname + "," + profession + "," + tempPassword + " , " + role);
             }
-
-
         }
-
-        //----------------------------------------------------------
-
         public string tempPasswordCreator()
         {
             var random = new Random();
@@ -45,7 +36,6 @@ namespace AppUtilities
             .Select(s => s[random.Next(s.Length)]).ToArray());
             return id;
         }
-
         public string FileData()
         {
              var path = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
@@ -58,58 +48,49 @@ namespace AppUtilities
             }
             return path;
         }
-
         public string GetRole(string username)
         {
-            var path = System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\..\AppUtilities\" + "TextFile1.txt";
-            //var path = @"C:\Users\mingo\Desktop\SystemManagement_Last_update\AppUtilities\TextFile1.txt";
-            //var path = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
+            var path = System.AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\..\AppUtilities\" + "TextFile1.txt";     
             using var rd = new StreamReader(path);
             string role = "Unknown";
 
             while (!rd.EndOfStream)
             {
-
                var split = rd.ReadLine().Split(',');
               //var  split = rd[split.Length - 1];
-
                 string usernameInFile = split[0];
                 if (username == usernameInFile)
-                {
-                   
-                    
-                  
+                {                 
                     role = split[5];
                     break;
                 }
-
             }
-
             return role;
         }
-        //public string  UserAccess() 
-        //{
-        //    var path = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
-        //    using var rd = new StreamReader(path);
-        //    List<string> x = new List<string>();
 
-        //    while (!rd.EndOfStream)
-        //    {
-        //        var split = rd.ReadLine().Split(',');
+        public static List<Person> getPersons()
+        {
+            // assuming there is a link between Scores.csv and data.csv by useername
+            string filePath = @"C:\Users\mingo\Desktop\SystemManagement\AppStatistics\Score.csv";
+            List<Person> persons = new List<Person>();
 
-        //        var storedRole = split[4];
-        //        x.Add(storedRole);
+            StreamReader reader = null;
+            if (File.Exists(filePath))
+            {
+                reader = new StreamReader(File.OpenRead(filePath));
+                
+                while (!reader.EndOfStream)
+                {
+                    var line = reader.ReadLine();
+                    var values = line.Split(',');
+                    string username = values[0];
+                    double score = Convert.ToDouble(values[1]);
 
-        //        //----------------------------------------
-        //        //var  last = split[split.Length - 1];
-
-        //        //---------------------------------------
-        //        Console.WriteLine(storedRole);
-
-        //    }
-
-        //    return path;
-        //}
+                    persons.Add(new Person(username, score));
+                }
+            }
+            return persons;
+        }
     }
 }
 
