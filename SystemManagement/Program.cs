@@ -13,9 +13,21 @@ namespace SystemManagement
         public static void Main(string[] args)
         {
             // temporary stuff
-            string userCulture = "fr";
-            new ConfigurationManager().setCulture(userCulture);
-            Console.WriteLine(Resource.Average);
+
+
+            //Console.WriteLine("Enter prefred language : ");
+            //Console.WriteLine("fr -> French");
+            //Console.WriteLine("en -> Enghish");
+            ////---------------------------------------------------
+            //string language = "fr";
+            //string fr = Console.ReadLine();
+            //if (fr == language) { Console.WriteLine("French option"); }
+
+            ////---------------------------------------------------
+            //string userCulture = Console.ReadLine();
+            //string userCulture = "fr";
+            //new ConfigurationManager().setCulture(userCulture);
+            //Console.WriteLine(Resource.Average);
 
             IUtilities utilities = new Utilities();
 
@@ -66,23 +78,77 @@ namespace SystemManagement
             }
             else if (success && userRole == x)             
                 {
-                
-                IStatisticsEngine statistics = new StatisticsEngine();             
+
+                //--------------------------------------------------------------
+                Console.WriteLine("Enter prefred language : ");
+                Console.WriteLine("fr -> French");
+                Console.WriteLine("en -> Enghish");
+                //---------------------------------------------------
+                //string language = "fr";
+                //string fr = Console.ReadLine();
+                // if (fr == language) { Console.WriteLine("French option"); }
+                Console.WriteLine("Chose case");
+                Console.WriteLine("1 -> French");
+                Console.WriteLine("2 -> English");
+                string option = Console.ReadLine(); 
+                switch (option) {
+                    case "1":
+                        new ConfigurationManager().setCulture();
+                        Console.WriteLine(Resource.Average);
+                        IStatisticsEngine _statistics = new StatisticsEngine();
+                        List<Person> _persons = Utilities.getPersons();
+                        var _Avg = _statistics.GetAvg(_persons);
+                        Console.WriteLine(Resource.Average + _Avg);
+                        Console.WriteLine("This is user");
+                        Console.WriteLine("-------------------------------");
+                        var _max = _statistics.GetMax(_persons);
+                        Console.WriteLine(Resource.Maxnumber + _max);
+                        Console.WriteLine("-------------------------------");
+                        var _min = _statistics.GetMinimum(_persons);
+                        Console.WriteLine( Resource.Minnumber + _min);
+                        Console.WriteLine("--------------------------------");
+                        var _mode = _statistics.GetMode(_persons);
+                        Console.WriteLine(Resource.mode + _mode);
+                        Console.WriteLine("-------------------------------");
+                        Console.WriteLine("French option");
+                        break;
+                    case "2":
+                        IStatisticsEngine statistics = new StatisticsEngine();
+
+                        List<Person> persons = Utilities.getPersons();
+
+                        var score = statistics.GetAvg(persons);
+                        Console.WriteLine(score);
+                        Console.WriteLine("This is user");
+                        Console.WriteLine("----------------------------");
+                        var max = statistics.GetMax(persons);
+                        Console.WriteLine("Maximum is : " + max);
+                        Console.WriteLine("-------------------------------");
+                        var min = statistics.GetMinimum(persons);
+                        Console.WriteLine("Minimum  is : " + min);
+                        Console.WriteLine("--------------------------------");
+                        var mode = statistics.GetMode(persons);
+                        Console.WriteLine("Mode is : " + mode);
+                        break;
+                }
+                //--------------------------------------------------------------
+
+               //IStatisticsEngine statistics = new StatisticsEngine();             
           
-                List<Person> persons = Utilities.getPersons();
+               // List<Person> persons = Utilities.getPersons();
            
-                var score = statistics.GetAvg(persons);
-                Console.WriteLine(score);
-                Console.WriteLine("This is user");
-                Console.WriteLine("----------------------------");
-                var max = statistics.GetMax(persons);
-                Console.WriteLine("Maximum is : " + max);
-                Console.WriteLine("-------------------------------");
-                var min = statistics.GetMinimum(persons);
-                Console.WriteLine("Minimum  is : " + min);
-                Console.WriteLine("--------------------------------");
-                var mode = statistics.GetMode(persons);
-                Console.WriteLine("Mode is : " + mode);
+               // var score = statistics.GetAvg(persons);
+               // Console.WriteLine(score);
+               // Console.WriteLine("This is user");
+               // Console.WriteLine("----------------------------");
+               // var max = statistics.GetMax(persons);
+               // Console.WriteLine("Maximum is : " + max);
+               // Console.WriteLine("-------------------------------");
+               // var min = statistics.GetMinimum(persons);
+               // Console.WriteLine("Minimum  is : " + min);
+               // Console.WriteLine("--------------------------------");
+               // var mode = statistics.GetMode(persons);
+               // Console.WriteLine("Mode is : " + mode);
 ;                }              
             else 
             {

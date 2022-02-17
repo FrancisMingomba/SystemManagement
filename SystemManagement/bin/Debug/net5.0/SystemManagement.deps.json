@@ -30,6 +30,11 @@
         },
         "runtime": {
           "AppUtilities.dll": {}
+        },
+        "resources": {
+          "fr/AppUtilities.resources.dll": {
+            "locale": "fr"
+          }
         }
       },
       "DataObjects/1.0.0": {

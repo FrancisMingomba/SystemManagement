@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Average" xml:space="preserve">
-    <value>Average</value>
+    <value>Moyenne</value>
   </data>
   <data name="Maxnumber" xml:space="preserve">
-    <value>Maxnumber</value>
+    <value>Chiffre maximum</value>
   </data>
   <data name="Menu.ReportForm" xml:space="preserve">
     <value>Report Form</value>
@@ -130,7 +130,7 @@
     <value>Text Form</value>
   </data>
   <data name="Minnumber" xml:space="preserve">
-    <value>Minnumber</value>
+    <value>Chiffre minimum</value>
   </data>
   <data name="mode" xml:space="preserve">
     <value>mode</value>

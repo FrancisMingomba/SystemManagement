@@ -61,7 +61,7 @@ namespace AppUtilities {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Average.
+        ///   Looks up a localized string similar to Moyenne.
         /// </summary>
         public static string Average {
             get {
@@ -70,7 +70,7 @@ namespace AppUtilities {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Maxnumber.
+        ///   Looks up a localized string similar to Chiffre maximum.
         /// </summary>
         public static string Maxnumber {
             get {
@@ -97,7 +97,7 @@ namespace AppUtilities {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Minnumber.
+        ///   Looks up a localized string similar to Chiffre minimum.
         /// </summary>
         public static string Minnumber {
             get {
