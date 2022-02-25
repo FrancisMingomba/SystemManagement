@@ -12,23 +12,6 @@ namespace SystemManagement
     {
         public static void Main(string[] args)
         {
-            // temporary stuff
-
-
-            //Console.WriteLine("Enter prefred language : ");
-            //Console.WriteLine("fr -> French");
-            //Console.WriteLine("en -> Enghish");
-            ////---------------------------------------------------
-            //string language = "fr";
-            //string fr = Console.ReadLine();
-            //if (fr == language) { Console.WriteLine("French option"); }
-
-            ////---------------------------------------------------
-            //string userCulture = Console.ReadLine();
-            //string userCulture = "fr";
-            //new ConfigurationManager().setCulture(userCulture);
-            //Console.WriteLine(Resource.Average);
-
             IUtilities utilities = new Utilities();
 
             Console.WriteLine("");
@@ -49,50 +32,59 @@ namespace SystemManagement
             if (success && userRole == z)
             {
                 Console.WriteLine("Main menu");
-                    Console.WriteLine("Choose a option");
-                    Console.WriteLine("1: Create a user");
-                    Console.WriteLine("2: Next");
+                Console.WriteLine("Choose a option");
+                Console.WriteLine("1: Create a user");
+                Console.WriteLine("2: Other");
 
-                    Console.Write("Choose an option: ");
-                    string option = Console.ReadLine();
-
-                    Console.WriteLine("----------Admin Longin------------");
-                    Console.WriteLine("        Create user");
-
-                    Console.WriteLine("Enter username:");
-                    string _userName = Console.ReadLine();
-
-                    Console.WriteLine("Enter First name:");
-                    string _firstName = Console.ReadLine();
-
-                    Console.WriteLine("Enter last name:");
-                    string _lastName = Console.ReadLine();
-
-                    Console.WriteLine("Enter profession:");
-                    string _profession = Console.ReadLine();
-
-                    Console.WriteLine("Enter last name:");
-                    string _role = Console.ReadLine();
-
-                    Person personToCreate = new Person(_userName, _firstName, _lastName, _profession, _role);
-            }
-            else if (success && userRole == x)             
+                Console.Write("Choose an option: ");
+            
+                string option = Console.ReadLine();
+                switch (option)
                 {
+                    case "1":
 
-                //--------------------------------------------------------------
+                Console.WriteLine("----------Admin Longin------------");
+                Console.WriteLine("        Create user");
+
+                Console.WriteLine("Enter username:");
+                string _userName = Console.ReadLine();
+
+                Console.WriteLine("Enter First name:");
+
+                string _firstName = Console.ReadLine();
+
+                Console.WriteLine("Enter last name:");
+                string _lastName = Console.ReadLine();
+
+                Console.WriteLine("Enter profession:");
+                string _profession = Console.ReadLine();
+
+                Console.WriteLine("Role:");
+                string _role = Console.ReadLine();
+
+                Person personToCreate = new Person(_userName, _firstName, _lastName, _profession, _role);
+                utilities.CreateUser(personToCreate);
+                 break;
+                    case "2":
+                        Console.WriteLine("Other");
+                 break;
+
+                    default:
+                        Console.WriteLine("Wrong option");
+                        break;
+                }
+            }
+            else if (success && userRole == x)
+            {
                 Console.WriteLine("Enter prefred language : ");
                 Console.WriteLine("fr -> French");
                 Console.WriteLine("en -> Enghish");
-                //---------------------------------------------------
-                //string language = "fr";
-                //string fr = Console.ReadLine();
-                // if (fr == language) { Console.WriteLine("French option"); }
                 Console.WriteLine("Chose case");
-                Console.WriteLine("1 -> French");
-                Console.WriteLine("2 -> English");
-                string option = Console.ReadLine(); 
-                switch (option) {
-                    case "1":
+
+                string option = Console.ReadLine();
+                switch (option)
+                {
+                    case "fr":
                         new ConfigurationManager().setCulture();
                         Console.WriteLine(Resource.Average);
                         IStatisticsEngine _statistics = new StatisticsEngine();
@@ -105,14 +97,14 @@ namespace SystemManagement
                         Console.WriteLine(Resource.Maxnumber + _max);
                         Console.WriteLine("-------------------------------");
                         var _min = _statistics.GetMinimum(_persons);
-                        Console.WriteLine( Resource.Minnumber + _min);
+                        Console.WriteLine(Resource.Minnumber + _min);
                         Console.WriteLine("--------------------------------");
                         var _mode = _statistics.GetMode(_persons);
                         Console.WriteLine(Resource.mode + _mode);
                         Console.WriteLine("-------------------------------");
                         Console.WriteLine("French option");
                         break;
-                    case "2":
+                    case "en":
                         IStatisticsEngine statistics = new StatisticsEngine();
 
                         List<Person> persons = Utilities.getPersons();
@@ -129,32 +121,19 @@ namespace SystemManagement
                         Console.WriteLine("--------------------------------");
                         var mode = statistics.GetMode(persons);
                         Console.WriteLine("Mode is : " + mode);
+                        //-----------------------------------
+                        Console.WriteLine(" case 2");                       
                         break;
-                }
-                //--------------------------------------------------------------
-
-               //IStatisticsEngine statistics = new StatisticsEngine();             
-          
-               // List<Person> persons = Utilities.getPersons();
-           
-               // var score = statistics.GetAvg(persons);
-               // Console.WriteLine(score);
-               // Console.WriteLine("This is user");
-               // Console.WriteLine("----------------------------");
-               // var max = statistics.GetMax(persons);
-               // Console.WriteLine("Maximum is : " + max);
-               // Console.WriteLine("-------------------------------");
-               // var min = statistics.GetMinimum(persons);
-               // Console.WriteLine("Minimum  is : " + min);
-               // Console.WriteLine("--------------------------------");
-               // var mode = statistics.GetMode(persons);
-               // Console.WriteLine("Mode is : " + mode);
-;                }              
-            else 
+                    default:
+                        Console.WriteLine("Wrong option");
+                        break;
+                }                  
+            }
+            else
             {
                 Console.WriteLine("Log in not successful");
-            }    
-                    
+            }
+
 
         }
     }

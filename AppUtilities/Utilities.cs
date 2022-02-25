@@ -10,25 +10,7 @@ namespace AppUtilities
 {
     public class Utilities : IUtilities
     {
-        public void CreateUser(Person persons)
-        {
-            string username = persons.Username;
-            string firstname = persons.FirstName;
-            string lastname = persons.LastName;
-            string profession = persons.Profession;
-            string role = persons.Role;
-            
-
-            string tempPassword = tempPasswordCreator();
-            string filepath = @"C:\Users\mingo\source\repos\SystemManagement\AppUtilities\data.csv";
-            string[] contents = { username + firstname + lastname + profession + role };           
-            string data = string.Join(", ", contents);
-
-            using (StreamWriter outputFile = new StreamWriter(filepath, append: true))
-            {
-                outputFile.WriteLine(username + "," + firstname + "," + lastname + "," + profession + "," + tempPassword + " , " + role);
-            }
-        }
+        
         public string tempPasswordCreator()
         {
             var random = new Random();
@@ -90,6 +72,28 @@ namespace AppUtilities
                 }
             }
             return persons;
+        }
+
+        public bool CreateUser(Person person)
+        {
+
+            string userName = person.Username;
+            string firstName = person.FirstName;
+            string lastName = person.LastName;
+            string profession = person.Profession;
+            string role = person.Role;
+
+
+            string tempPassword = tempPasswordCreator();
+       
+            string filePath = @"C:\Users\mingo\Desktop\SystemManagement\AppUtilities\data.csv";
+
+            using (StreamWriter outputFile = new StreamWriter(filePath, append: true))
+            {             
+                outputFile.WriteLine(userName + "," + firstName + "," + lastName + "," + profession + "," + tempPassword + "," + role);
+            }
+            return true;
+
         }
     }
 }

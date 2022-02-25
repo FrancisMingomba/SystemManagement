@@ -42,7 +42,7 @@ namespace DataObjects
             this.Score = score;
         }
 
-        public Person()
+        public Person(object userName)
         {
             //this.Score = score;
         }
@@ -52,6 +52,11 @@ namespace DataObjects
             this.Username = username;
             this.Password = password;
         }
+
+        public Person()
+        {
+        }
+
         public override string ToString()
         {
             //return "From Object Person: " + Name + ", Score: " + Score.ToString();
