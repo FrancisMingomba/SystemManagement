@@ -13,7 +13,9 @@ namespace SystemManagement
         public static void Main(string[] args)
         {
             IUtilities utilities = new Utilities();
-
+           // Utilities ut = new Utilities();
+           // ut.getPersons();
+    
             Console.WriteLine("");
             Console.WriteLine("----------Login-------------");
             Console.WriteLine("");
@@ -64,7 +66,9 @@ namespace SystemManagement
 
                 Person personToCreate = new Person(_userName, _firstName, _lastName, _profession, _role);
                 utilities.CreateUser(personToCreate);
-                 break;
+
+                utilities.SendEmail(personToCreate);
+                         break;
                     case "2":
                         Console.WriteLine("Other");
                  break;
@@ -88,7 +92,7 @@ namespace SystemManagement
                         new ConfigurationManager().setCulture();
                         Console.WriteLine(Resource.Average);
                         IStatisticsEngine _statistics = new StatisticsEngine();
-                        List<Person> _persons = Utilities.getPersons();
+                        List<Person> _persons = utilities.getPersons();
                         var _Avg = _statistics.GetAvg(_persons);
                         Console.WriteLine(Resource.Average + _Avg);
                         Console.WriteLine("This is user");
@@ -107,7 +111,7 @@ namespace SystemManagement
                     case "en":
                         IStatisticsEngine statistics = new StatisticsEngine();
 
-                        List<Person> persons = Utilities.getPersons();
+                        List<Person> persons = utilities.getPersons();
 
                         var score = statistics.GetAvg(persons);
                         Console.WriteLine(score);
@@ -121,7 +125,7 @@ namespace SystemManagement
                         Console.WriteLine("--------------------------------");
                         var mode = statistics.GetMode(persons);
                         Console.WriteLine("Mode is : " + mode);
-                        //-----------------------------------
+                       
                         Console.WriteLine(" case 2");                       
                         break;
                     default:

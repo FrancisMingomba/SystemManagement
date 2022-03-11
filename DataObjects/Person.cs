@@ -57,15 +57,15 @@ namespace DataObjects
         {
         }
 
-        public override string ToString()
-        {
-            //return "From Object Person: " + Name + ", Score: " + Score.ToString();
-            //return  Name + ",  " + Score.ToString();
-            //return Name + " " +Score.ToString(); This one
-            //return Name + " " + Score + Username + Password.ToString();
-            //return Name + " " + Score.ToString();
-            return Username + FirstName + LastName + Profession + Role.ToString();
-        }
+        //public override string ToString()
+        //{
+        //    //return "From Object Person: " + Name + ", Score: " + Score.ToString();
+        //    //return  Name + ",  " + Score.ToString();
+        //    //return Name + " " +Score.ToString(); This one
+        //    //return Name + " " + Score + Username + Password.ToString();
+        //    //return Name + " " + Score.ToString();
+        //    return Username + FirstName + LastName + Profession  + Role.ToString();
+        //}
 
     }
 }

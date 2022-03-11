@@ -10,10 +10,12 @@ namespace AppUtilities
    public interface IUtilities
     {
 
-       // public List<Person> CreateUser(List<Person>persons);
-        public string FileData();
-        public string GetRole(string username);
-       // void CreateUser();
+    
+       // public string FileData();
+        public string GetRole(string username);   
         public bool CreateUser(Person person);
+        public void SendEmail(Person person);
+        //public static passwordChange();
+        public  List<Person> getPersons();
     }
 }
