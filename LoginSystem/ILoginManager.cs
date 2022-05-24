@@ -10,8 +10,7 @@ namespace LoginSystem
     {
         bool authenticate(String username, String password);
         bool userAuthenticate(String username, String password);
-        // public string userAuthenticate(String username, String password);
-        // public string dataTosave(string  person);
-
+        public string ChangePassword(string username, string currePassword, string targetPassword);
+     
     }
 }

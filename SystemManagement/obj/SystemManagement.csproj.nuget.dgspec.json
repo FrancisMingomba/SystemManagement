@@ -213,7 +213,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\mingo\\Desktop\\SystemManagement\\DataObjects\\DataObjects.csproj": {
+                "projectPath": "C:\\Users\\mingo\\Desktop\\SystemManagement\\DataObjects\\DataObjects.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

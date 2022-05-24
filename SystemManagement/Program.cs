@@ -13,9 +13,14 @@ namespace SystemManagement
         public static void Main(string[] args)
         {
             IUtilities utilities = new Utilities();
-           // Utilities ut = new Utilities();
-           // ut.getPersons();
-    
+            //utilities.ListItems();
+          
+            //utilities.getPersonsFromFile();
+
+           
+           
+
+
             Console.WriteLine("");
             Console.WriteLine("----------Login-------------");
             Console.WriteLine("");
@@ -24,15 +29,28 @@ namespace SystemManagement
 
             Console.Write("Enter your password: ");
             String password = Console.ReadLine();
+            //---------------------------------------------------
+            Console.Write("Enter Current password: ");
+            String targetPassword = Console.ReadLine();
+            //---------------------------------------------------
 
             ILoginManager loginManager = new LoginManager();
             bool success = loginManager.userAuthenticate(username, password);
             string userRole = utilities.GetRole(username);
             string x = "user";
             string z = "admin";
+            //-------------------------------------------
+            utilities.changePassword(username,password, targetPassword);
+           //--------------------------------------------
 
             if (success && userRole == z)
             {
+               // utilities.newPass("new password");
+                //utilities.textFileItem();
+                //utilities.itemfromList();
+
+               // string passwordInFile = utilities.passwordInFile(username);
+                //Console.WriteLine("Password in file : " + passwordInFile);
                 Console.WriteLine("Main menu");
                 Console.WriteLine("Choose a option");
                 Console.WriteLine("1: Create a user");
@@ -57,17 +75,21 @@ namespace SystemManagement
 
                 Console.WriteLine("Enter last name:");
                 string _lastName = Console.ReadLine();
+                        //------------------------------------
+                        //Console.WriteLine("Enter last name:");
+                        //string _password = Console.ReadLine();
+                        //-----------------------------------
 
-                Console.WriteLine("Enter profession:");
+                        Console.WriteLine("Enter profession:");
                 string _profession = Console.ReadLine();
 
                 Console.WriteLine("Role:");
                 string _role = Console.ReadLine();
 
-                Person personToCreate = new Person(_userName, _firstName, _lastName, _profession, _role);
-                utilities.CreateUser(personToCreate);
+                //Person personToCreate = new Person(_userName, _firstName, _lastName,_password, _profession, _role);
+                //utilities.CreateUser(personToCreate);
 
-                utilities.SendEmail(personToCreate);
+                //utilities.SendEmail(personToCreate);
                          break;
                     case "2":
                         Console.WriteLine("Other");
@@ -80,6 +102,19 @@ namespace SystemManagement
             }
             else if (success && userRole == x)
             {
+
+                //------------------------------------------------------
+                //Console.WriteLine("Enter new pasword:");
+                //string targetPassword = Console.ReadLine();
+               
+                //IUtilities utilities1 = new Utilities();
+                //string ut = utilities1.passwordInFile(username, password, "new password");
+                //Console.WriteLine(" new password in file :" + ut);
+                //string targetPassword = Console.ReadLine();
+
+               // string changePass = loginManager.ChangePassword(username, password, targetPassword);
+                //Console.WriteLine("Change pass: " + changePass);
+                //------------------------------------------------------
                 Console.WriteLine("Enter prefred language : ");
                 Console.WriteLine("fr -> French");
                 Console.WriteLine("en -> Enghish");

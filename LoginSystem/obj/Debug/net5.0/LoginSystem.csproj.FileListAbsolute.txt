@@ -22,3 +22,6 @@ C:\Users\mingo\Desktop\SystemManagement\LoginSystem\obj\Debug\net5.0\LoginSystem
 C:\Users\mingo\Desktop\SystemManagement\LoginSystem\obj\Debug\net5.0\LoginSystem.dll
 C:\Users\mingo\Desktop\SystemManagement\LoginSystem\obj\Debug\net5.0\ref\LoginSystem.dll
 C:\Users\mingo\Desktop\SystemManagement\LoginSystem\obj\Debug\net5.0\LoginSystem.pdb
+C:\Users\mingo\Desktop\SystemManagement\LoginSystem\bin\Debug\net5.0\DataObjects.dll
+C:\Users\mingo\Desktop\SystemManagement\LoginSystem\bin\Debug\net5.0\DataObjects.pdb
+C:\Users\mingo\Desktop\SystemManagement\LoginSystem\obj\Debug\net5.0\LoginSystem.csproj.CopyComplete

@@ -1,1 +1,6 @@
-﻿
+﻿user5,Stony,Uriel,kid,AEazXacB,user
+user2,Aurelie,Kalonga,sales associate,7UUE6Nqv,user
+Francis,Francis,Mingomba,Programmer,password,admin
+user6,Odette,Kiama,Assembly,KU6C6aDD,user
+Michael,Tak,Kirkwood,programmer,iNE3ojRU,user
+

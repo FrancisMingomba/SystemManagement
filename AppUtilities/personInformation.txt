@@ -1,0 +1,5 @@
+user5,Stony,Uriel,AEazXacB,kid,user
+user2,Aurelie,Kalonga,7UUE6Nqv,sales associate,user
+Francis,Francis,Mingomba,NEWPASS,Programmer,admin
+user6,Odette,Kiama,KU6C6aDD,Assembly,user
+Michael,Tak,Kirkwood,iNE3ojRU,programmer,user

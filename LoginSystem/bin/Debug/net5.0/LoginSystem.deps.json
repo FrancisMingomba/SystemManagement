@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "LoginSystem/1.0.0": {
+        "dependencies": {
+          "DataObjects": "1.0.0"
+        },
         "runtime": {
           "LoginSystem.dll": {}
+        }
+      },
+      "DataObjects/1.0.0": {
+        "runtime": {
+          "DataObjects.dll": {}
         }
       }
     }
   },
   "libraries": {
     "LoginSystem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataObjects/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

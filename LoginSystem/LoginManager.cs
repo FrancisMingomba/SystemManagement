@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataObjects;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -62,13 +63,13 @@ namespace LoginSystem
         // Optimize for performance
         public bool userAuthenticate(string username, string password)
         {
-            string filePath = @"C:\Users\mingo\Desktop\SystemManagement\AppUtilities\data.csv";
+            string filePathZ = @"C:\Users\mingo\Desktop\SystemManagement\AppUtilities\data.csv";
       
             bool success = false;
 
             try
             {
-                using var rd = new StreamReader(filePath);
+                using var rd = new StreamReader(filePathZ);
                 while (!rd.EndOfStream)
                 {
                     var split = rd.ReadLine().Split(',');
@@ -89,7 +90,44 @@ namespace LoginSystem
 
             return success;
         }
+        List<Person> personStore = new List<Person>()
+        {
+             new Person("username_1", "firstname_1", "lastname_1"," password" ,"profession", "role")
+        };
+        public List<Person> getPersons()
+        {
+            return personStore;
+        }    
+        public string ChangePassword(string username, string currentPassword, string targetPassword)
+        {
+         
+                List<Person> persons = getPersons();
 
-
+                foreach (Person person in persons)
+                {
+                    if (person.Username == username)
+                    {
+                        if (person.Password == currentPassword)
+                        {
+                            person.Password = targetPassword;
+                            break;
+                        }
+                        else
+                        {
+                            // never print to console in model classes. this is just for our own
+                            // debug
+                            Console.WriteLine("Password on file was not the same");
+                        }
+                    }
+                }
+               // return username + currentPassword + targetPassword;
+            return  targetPassword;
+        }
+        
     }
-}
+   
+    }
+
+
+
+

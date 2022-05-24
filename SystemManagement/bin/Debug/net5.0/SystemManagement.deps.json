@@ -43,6 +43,9 @@
         }
       },
       "LoginSystem/1.0.0": {
+        "dependencies": {
+          "DataObjects": "1.0.0"
+        },
         "runtime": {
           "LoginSystem.dll": {}
         }
